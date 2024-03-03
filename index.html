@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="apple-touch-icon" sizes="180x180" href="img/fav/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/fav/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/fav/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="img/fav/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fragment+Mono&family=Inter:wght@500;600;700&display=swap&_v=20240302180031"
+    rel="stylesheet"
+  />
+  
+  <link rel="stylesheet" href="css/style.min.css?_v=20240302180031" />
+  <title>Cheat Checkers</title>
+</head>
+
+
+  <body>
+    <div class="wrapper">
+      <main class="main">
+        <aside class="sidebar">
+  <div class="sidebar__wrapper">
+    <div class="sidebar__header header-sidebar">
+      <a class="header-sidebar__avatar" href="#">
+        <img
+          class="header-sidebar__avatar-img"
+          src="img/avatar.jpg"
+          alt="profile"
+        />
+        <span class="header-sidebar__name">knight</span>
+      </a>
+      <div class="header-sidebar__btns">
+        <button class="header-sidebar__note-btn _notifications"></button>
+        <button class="header-sidebar__exit-btn _exit"></button>
+      </div>
+      
+    </div>
+    <div class="sidebar__block block-sidebar">
+      <h5 class="block-sidebar__title">Общее</h5>
+      <ul class="block-sidebar__list">
+        <li class="block-sidebar__item">
+          <button style="margin-bottom: 3px;" id="main" class="block-sidebar__btn ">
+            <span class="_home"></span>Главная
+          </button>
+        </li>
+        <li class="block-sidebar__item">
+          <div data-spollers data-one-spoller class="block-sidebar__spoller">
+            <div class="block-sidebar__spoller-title">
+              <button
+                tabindex="-1"
+                type="button"
+                class="block-sidebar__btn _active"
+                data-spoller
+              >
+                <span class="_users"></span>Пользователи
+              </button>
+              <div class="block-sidebar__spoller-text">
+                <div class="active">
+                  <button id="moderators">
+                    <span class="_moderators"></span>Модераторы
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar__block block-sidebar">
+      <h5 class="block-sidebar__title">Модерация</h5>
+      <ul class="block-sidebar__list">
+        <li class="block-sidebar__item">
+          <div data-spollers data-one-spoller class="block-sidebar__spoller">
+            <div class="block-sidebar__spoller-title">
+              <button
+                class="block-sidebar__btn"
+                tabindex="-1"
+                type="button"
+                data-spoller
+              >
+                <span class="_shield"></span>Проверка
+              </button>
+              <div class="block-sidebar__spoller-text">
+                <div>Lorem.</div>
+                <div>Lorem.</div>
+                <div>Lorem.</div>
+                <div>Lorem.</div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar__block block-sidebar">
+      <h5 class="block-sidebar__title">Настройки</h5>
+      <ul class="block-sidebar__list">
+        <li class="block-sidebar__item">
+          <button class="block-sidebar__btn">
+            <span class="_profile"></span>Профиль
+          </button>
+        </li>
+        <li class="block-sidebar__item">
+          <button class="block-sidebar__btn">
+            <span class="_control"></span>Управление API
+          </button>
+        </li>
+        <li class="block-sidebar__item">
+          <button class="block-sidebar__btn">
+            <span class="_actions"></span>Журнал действий
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="sidebar__notifications notifications">
+    <div class="notifications__title">Уведомления</div>
+    <ul class="notifications__list">
+      <li class="notifications__item">
+        <div class="notifications__item-content">
+          <p class="notifications__item-title">AAAAAAAAAAAAAAAAAAAAAAuto layout</p>
+          <p class="notifications__item-date">2 февраля</p>
+        </div>
+        <a href="#" class="notifications__item-link">Читать &#8594</a>
+      </li>
+      <li class="notifications__item">
+        <div class="notifications__item-content">
+          <p class="notifications__item-title">Обновление 2.11.56SSSSSSSSSSSSSSSSSSSSSSSSSSS</p>
+          <p class="notifications__item-date">2 февраля</p>
+        </div>
+        <a href="#" class="notifications__item-link">Читать &#8594</a>
+      </li>
+      <li class="notifications__item">
+        <div class="notifications__item-content">
+          <p class="notifications__item-title">Обновление 2.11.56</p>
+          <p class="notifications__item-date">2 февраля</p>
+        </div>
+        <a href="#" class="notifications__item-link">Читать &#8594</a>
+      </li>
+    </ul>
+  </div>
+</aside>
+
+        <section class="moderators">
+  <div class="moderators__wrapper">
+    <h2 class="moderators__title">Модераторы</h2>
+    <p class="moderators__text text-1">Управление модераторами</p>
+    <p class="moderators__subtext">Добавляйте и редактируйте модераторов</p>
+    <div class="moderators__form">
+      <div class="moderators__form-textcontainer">
+        <p class="moderators__form-text">Новый модератор</p>
+        <p class="moderators__form-subtext">Добавляет нового модератора</p>
+      </div>
+      <button class="moderators__form-btn" type="button">Добавить</button>
+    </div>
+    <p class="moderators__text text-2">Список модераторов</p>
+    <p class="moderators__text text-3 centered">Нет модераторов</p>
+    <p class="moderators__subtext centered">Похоже, здесь нет модераторов. Добавьте своего первого модератора.</p>
+  </div>
+</section>
+
+      </main>
+      <script defer src="js/app.min.js?_v=20240302180031"></script>
+    </div>
+  </body>
+</html>
